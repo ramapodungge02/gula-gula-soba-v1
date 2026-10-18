@@ -98,26 +98,7 @@
           <div class="features-grid">
             <div class="feature-card">
               <div class="feature-icon">
-                <svg
-                  width="22"
-                  height="22"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <circle cx="12" cy="12" r="4" />
-                  <path d="M12 2v2" />
-                  <path d="M12 20v2" />
-                  <path d="m4.93 4.93 1.41 1.41" />
-                  <path d="m17.66 17.66 1.41 1.41" />
-                  <path d="M2 12h2" />
-                  <path d="M20 12h2" />
-                  <path d="m6.34 17.66-1.41 1.41" />
-                  <path d="m19.07 4.93-1.41 1.41" />
-                </svg>
+                <img src="img/icon-alami.svg" alt="100% Bahan Alami" width="22" height="22" />
               </div>
               <h3 class="feature-title">100% Bahan Alami</h3>
               <p class="feature-desc">
@@ -127,26 +108,7 @@
             </div>
             <div class="feature-card">
               <div class="feature-icon">
-                <svg
-                  width="22"
-                  height="22"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <circle cx="12" cy="12" r="4" />
-                  <path d="M12 2v2" />
-                  <path d="M12 20v2" />
-                  <path d="m4.93 4.93 1.41 1.41" />
-                  <path d="m17.66 17.66 1.41 1.41" />
-                  <path d="M2 12h2" />
-                  <path d="M20 12h2" />
-                  <path d="m6.34 17.66-1.41 1.41" />
-                  <path d="m19.07 4.93-1.41 1.41" />
-                </svg>
+                <img src="img/icon-alami.svg" alt="100% Bahan Alami" width="22" height="22" />
               </div>
               <h3 class="feature-title">100% Bahan Alami</h3>
               <p class="feature-desc">
@@ -156,26 +118,7 @@
             </div>
             <div class="feature-card">
               <div class="feature-icon">
-                <svg
-                  width="22"
-                  height="22"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <circle cx="12" cy="12" r="4" />
-                  <path d="M12 2v2" />
-                  <path d="M12 20v2" />
-                  <path d="m4.93 4.93 1.41 1.41" />
-                  <path d="m17.66 17.66 1.41 1.41" />
-                  <path d="M2 12h2" />
-                  <path d="M20 12h2" />
-                  <path d="m6.34 17.66-1.41 1.41" />
-                  <path d="m19.07 4.93-1.41 1.41" />
-                </svg>
+                <img src="img/icon-alami.svg" alt="100% Bahan Alami" width="22" height="22" />
               </div>
               <h3 class="feature-title">100% Bahan Alami</h3>
               <p class="feature-desc">
@@ -185,26 +128,7 @@
             </div>
             <div class="feature-card">
               <div class="feature-icon">
-                <svg
-                  width="22"
-                  height="22"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <circle cx="12" cy="12" r="4" />
-                  <path d="M12 2v2" />
-                  <path d="M12 20v2" />
-                  <path d="m4.93 4.93 1.41 1.41" />
-                  <path d="m17.66 17.66 1.41 1.41" />
-                  <path d="M2 12h2" />
-                  <path d="M20 12h2" />
-                  <path d="m6.34 17.66-1.41 1.41" />
-                  <path d="m19.07 4.93-1.41 1.41" />
-                </svg>
+                <img src="img/icon-alami.svg" alt="100% Bahan Alami" width="22" height="22" />
               </div>
               <h3 class="feature-title">100% Bahan Alami</h3>
               <p class="feature-desc">
@@ -375,15 +299,70 @@
           </div>
         </div>
       </section>
+
+      <!-- Kontak Section -->
+      <section class="contact-section" id="kontak">
+        <div class="contact-inner">
+          <div class="section-header-center">
+            <span class="section-eyebrow">KONTAK KAMI</span>
+            <h2 class="section-title">Hubungi Kami</h2>
+            <p class="section-subtitle">
+              Punya pertanyaan seputar produk atau ingin memesan langsung?<br class="desktop-br" />
+              Tuliskan nama dan pesan Anda, lalu pilih kirim via WhatsApp atau Email.
+            </p>
+          </div>
+
+          <div class="contact-card">
+            <form id="formKontak" class="contact-form" onsubmit="event.preventDefault();">
+              <div class="form-group">
+                <label for="contact-name">Nama</label>
+                <input
+                  type="text"
+                  id="contact-name"
+                  name="nama"
+                  placeholder="Masukkan nama Anda..."
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="contact-desc">Deskripsi</label>
+                <textarea
+                  id="contact-desc"
+                  name="pesan"
+                  rows="4"
+                  placeholder="Tuliskan deskripsi pesanan atau pertanyaan Anda..."
+                  required
+                ></textarea>
+              </div>
+
+              <div class="contact-buttons">
+                <button type="button" id="btn-send-wa" class="btn-contact btn-contact-wa">
+                  <img src="img/icon-wa.svg" alt="WhatsApp" width="18" height="18" />
+                  <span>Kirim ke WA</span>
+                </button>
+
+                <button type="button" id="btn-send-email" class="btn-contact btn-contact-email">
+                  <img src="img/icon-email.svg" alt="Email" width="18" height="18" />
+                  <span>Kirim ke Email</span>
+                </button>
+              </div>
+
+              <div id="statusEl" class="status-pesan" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- Footer -->
-    <footer id="kontak">
+    <footer id="footer">
       <div class="footer-content">
         <p>&copy; 2026 Gula-Gula Soba Gorontalo. 100% Otentik & Alami.</p>
       </div>
     </footer>
 
     <script>
+      // Toggle Hamburger Menu Mobile
       const hamburger = document.getElementById("hamburger-btn");
       const menu = document.getElementById("nav-menu");
       if (hamburger && menu) {
@@ -393,5 +372,7 @@
         });
       }
     </script>
+    <!-- Logika Formulir Kontak -->
+    <script src="js/kirim_pesan.js"></script>
   </body>
 </html>

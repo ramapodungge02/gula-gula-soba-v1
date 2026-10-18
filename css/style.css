@@ -382,6 +382,12 @@ header .nav-bar {
   margin-bottom: 1.1rem;
 }
 
+.feature-icon img {
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+
 .feature-title {
   color: #2b1717;
   font-size: 0.95rem;
@@ -541,6 +547,145 @@ header .nav-bar {
 
 .btn-wa:hover {
   background-color: #88726a;
+}
+
+/* ===============================
+   KONTAK SECTION
+   =============================== */
+.contact-section {
+  background-color: #f7f2ef;
+  width: 100%;
+}
+
+.contact-inner {
+  padding: 4.5rem 3rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-card {
+  max-width: 580px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border: 1px solid rgba(100, 48, 48, 0.12);
+  border-radius: 16px;
+  padding: 2.2rem 2rem;
+  box-shadow: 0 8px 24px rgba(100, 48, 48, 0.05);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: left;
+}
+
+.form-group label {
+  font-family: var(--font-family);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #2b1717;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  font-family: var(--font-family);
+  font-size: 0.88rem;
+  color: #333333;
+  background-color: #faf7f5;
+  border: 1.5px solid #e5dad3;
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  background-color: #ffffff;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(100, 48, 48, 0.12);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+
+.contact-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.btn-contact {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 50px;
+  font-family: var(--font-family);
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  white-space: nowrap;
+}
+
+.btn-contact img {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+.btn-contact-wa {
+  background-color: #25D366;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.2);
+}
+
+.btn-contact-wa:hover {
+  background-color: #20ba5a;
+  box-shadow: 0 6px 16px rgba(37, 211, 102, 0.3);
+}
+
+.btn-contact-email {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(100, 48, 48, 0.2);
+}
+
+.btn-contact-email:hover {
+  background-color: #522525;
+  box-shadow: 0 6px 16px rgba(100, 48, 48, 0.3);
+}
+
+.status-pesan {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-align: center;
+  color: var(--primary-color);
+  line-height: 1.5;
+  transition: all 0.25s ease;
 }
 
 /* ===============================
@@ -786,6 +931,27 @@ footer {
     font-size: 0.7rem;
   }
 
+  /* Kontak Section Mobile */
+  .contact-inner {
+    padding: 3rem 1.25rem;
+  }
+
+  .contact-card {
+    padding: 1.6rem 1.25rem;
+    border-radius: 14px;
+  }
+
+  .contact-buttons {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .btn-contact {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 0.85rem;
+  }
+
   /* Footer Mobile */
   footer {
     padding: 3rem 1.25rem;
@@ -822,7 +988,8 @@ footer {
   }
 
   .features-inner,
-  .products-inner {
+  .products-inner,
+  .contact-inner {
     padding: 3.5rem 1.5rem;
   }
 
